@@ -44,7 +44,6 @@ What is Docker ?
 
 ## Push Docker Image to Docker Hub
 `docker login` - to login to docker hub.
-[JourneyToDocker423]
 
 `docker image rm -f welcome-app` - to remove the image.
 
