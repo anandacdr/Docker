@@ -42,3 +42,22 @@ What is Docker ?
 
 `docker stop <container-id>` - to stop the container.
 
+## Push Docker Image to Docker Hub
+`docker login` - to login to docker hub.
+[JourneyToDocker423]
+
+`docker image rm -f welcome-app` - to remove the image.
+
+## Now, Again Build the Image
+`docker build -t anandacdr/docker-app .` - to build the image.
+
+`docker tag anandacdr/docker-app anandacdr/welcome-app1` - to tag (change) the image name.
+
+`docker push anandacdr/docker-app:latest` - to push the image to docker hub.
+
+`docker image rm -f anandacdr/docker-app` - to remove the image.
+
+`docker run -d -p 5000:5000 anandacdr/docker-app` - to run the container.
+
+`docker ps` - to check how many containers are running.
+
